@@ -89,14 +89,13 @@ function input_data($data){
 
 
     
-    function generateCode(){
-          // Generate a 6 digits hexadecimal number
-	  $numbytes = 3; // Because 6 digits hexadecimal = 3 bytes
-	  $bytes = openssl_random_pseudo_bytes($numbytes); 
-          $hex   = bin2hex($bytes);
-	  return $hex;
-        
-    }
+function generateCode() {
+    // Generate a 6 digits hexadecimal number
+    $numbytes = 3; // Because 6 digits hexadecimal = 3 bytes
+    $bytes = openssl_random_pseudo_bytes($numbytes); 
+    $hex = bin2hex($bytes);
+    return $hex;
+}
     
     
     
